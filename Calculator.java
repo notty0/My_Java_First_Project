@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
+      Scanner in = new Scanner(System.in);
    
       System.out.println("Enter first number:");
-      double num1 = scanner.nextDouble();
+      double num1 = in.nextDouble();
    
       System.out.println("Enter second number:");
-      double num2 = scanner.nextDouble();
+      double num2 = in.nextDouble();
    
       System.out.println("Enter an operator (+, -, *, /): ");
-      char operator = scanner.next().charAt(0);
+      char operator = in.next().charAt(0);
    
-      scanner.close();
+      in.close();
       double output;
    
       switch(operator)
